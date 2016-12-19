@@ -1,0 +1,36 @@
+﻿{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "copyToOutput": [
+      "appsettings.json"
+    ]
+  },
+
+  "dependencies": {
+    "Microsoft.Extensions.Logging": "1.1.0",
+    "Microsoft.Extensions.Logging.Console": "1.1.0",
+    "Microsoft.Extensions.DependencyInjection": "1.1.0",
+    "Microsoft.Extensions.Configuration": "1.1.0",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.1.0",
+    "Microsoft.Extensions.Configuration.Json": "1.1.0",
+    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.1.0",
+    "FourC.Worker.Core": "*"
+  },
+
+  "publishOptions": {
+    "include": [
+      "appsettings.json"
+    ]
+  },
+
+  "frameworks": {
+    "net461": {
+      "frameworkAssemblies": {
+        "System.Messaging": "4.0.0.0",
+        "System.Transactions": "4.0.0.0",
+        "System.Data": "4.0.0.0"
+      }
+    }
+  }
+}
