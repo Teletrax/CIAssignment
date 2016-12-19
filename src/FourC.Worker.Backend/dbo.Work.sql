@@ -1,7 +1,17 @@
-﻿CREATE TABLE [dbo].[Work]
+﻿CREATE DATABASE [Worker]
+
+GO
+
+USE [Worker]
+
+GO
+
+CREATE TABLE [dbo].[Work]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [User] NVARCHAR(100) NOT NULL, 
     [Content] NVARCHAR(100) NOT NULL, 
     [Timestamp] DATETIME NOT NULL
 )
+
+GO
