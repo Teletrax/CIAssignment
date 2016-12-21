@@ -1,4 +1,6 @@
-Create one or more powershell scripts that perform the following actions:
+# 4C Continuous Integration Assignment
+
+## Create one or more powershell scripts that perform the following actions:
 
 Phase 1
     1. Install Git for Windows
@@ -38,13 +40,13 @@ Body:
 
 Connect to the SQL Server instance you created and perform a select on Work table, if this table has contents the application is successfully deployed.
 
-Assume:
+## Assume
 We suggest you to install/use the Windows Server into a new VM Machine that you need to create using the evaluation version of Windows and can be directly downloaded at Microsoft website.
 The REST endpoint (Web Application/API) should be configured to run on "localhost" on port 80.
 You need to do some research and come up with a powershell script that connects to SQL Server and run the SQL Script we provided to setup the database table structure.
 You can send us an e-mail (fabricio.polonio@4cinsights.com, bulat.gafurov@4cinsights.com) if you have any question.
 
-Notes:
+## Notes
 Given a clean Windows 2012R2/2016 Server machine, this powershell script should run and install/deploy all those components without errors.
 You can also suggest improvements on that build pipeline or point security issues.
 You can "Fork" this repository on Github and commit your solution into some folder, ex: "Solution".
