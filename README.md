@@ -5,8 +5,8 @@
 The assignment simulates system with following workflow.
 
 1. External actor (User) sends a REST request to the `FourC.Worker.Api` endpoint at `/v1/worker`
-1. `FourC.Worker.Api` handles web request by posting in to the queue (MSMQ)
-1. A backend process `FourC.Worker.Backend` reads messages from the queue and process the message by creating record in the database.
+1. `FourC.Worker.Api` handles web request by posting it to the queue (MSMQ)
+1. A backend process `FourC.Worker.Backend` reads messages from the queue and process the message by creating record in the database. The above action is done in the context of a distributed transaction that requires MSDTC.
 
 ![Architecture](architecture.png)
 
