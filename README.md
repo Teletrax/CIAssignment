@@ -2,36 +2,35 @@
 
 ### Create one or more powershell scripts that perform the following actions:
 
-**Phase 1**
+#### Phase 1
 
-    1. Install Git for Windows
-    2. Clone the https://github.com/Teletrax/CIAssignment.git repository into some folder
-    2. Install .NET Core SDK
-    3. Restore .NET Core Package
-    4. Build / Publish (Release Mode)
-    4.1 FourC.Worker.Api
-    4.2 FourC.Worker.Backend
-    5. Create ZIP archive with published artifacts (4.1, 4.2)
+1. Install Git for Windows
+1. Clone the https://github.com/Teletrax/CIAssignment.git repository into some folder
+1. Install .NET Core SDK
+1. Restore .NET Core Package
+1. Build / Publish (Release Mode)
+  1. FourC.Worker.Api
+  1. FourC.Worker.Backend
+1. Create ZIP archive with published artifacts (5.i, 5.ii)
 
-**Phase 2**
+#### Phase 2
 
-    1 - Install MSDTC
-    2 - Install MSMQ
-    3 - Install IIS
-    4 - Install ASP.NET Core
-    5 - Install SQL Server 2014/2016 (Express)
-    6 - Extract ZIP archive (From Phase 1 Step 5)
-    6 - Run SQL script that will create the database and table structures. (Located inside the Scripts folder on repository)
-    7 - Configure and host the REST endpoint (Web Application) on IIS
-    8 - Configure and start (in background) the backend application
-
+1. Install MSDTC
+1. Install MSMQ
+1. Install IIS
+1. Install ASP.NET Core
+1. Install SQL Server 2014/2016 (Express)
+1. Extract ZIP archive (From Phase 1 Step 5)
+1. Run SQL script that will create the database and table structures. (Located inside the Scripts folder on repository)
+1. Configure and host the REST endpoint (Web Application) on IIS
+1. Configure and start (in background) the backend application
 	
 ### Test
 
 To test if the application is working properly you can use Postman and perform a test request to the REST API:
 
-POST
-http://localhost/v1/worker
+```
+POST http://localhost/v1/worker
 
 Content-Type: application/json
 
@@ -42,6 +41,7 @@ Body:
    "content":"Test",
    "timestamp":"2016-12-16T02:00:00Z"
 }
+```
 
 Connect to the SQL Server instance you created and perform a select on Work table, if this table has contents the application is successfully deployed.
 
