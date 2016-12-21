@@ -6,7 +6,7 @@ The assignment simulates system with following workflow.
 
 1. External actor (User) sends a REST request to the `FourC.Worker.Api` endpoint at `/v1/worker`
 1. `FourC.Worker.Api` handles web request by posting it to the queue (MSMQ)
-1. A backend process `FourC.Worker.Backend` reads messages from the queue and process the message by creating record in the database. The above action is done in the context of a distributed transaction that requires MSDTC.
+1. A backend process `FourC.Worker.Backend` reads messages from the queue and processes the message by creating record in the database. The above action is done in the context of a distributed transaction that requires MSDTC.
 
 ![Architecture](architecture.png)
 
@@ -59,11 +59,11 @@ Connect to the SQL Server instance you created and perform a select on Work tabl
 
 * We suggest you to install/use the Windows Server into a new VM Machine that you need to create using the evaluation version of Windows and can be directly downloaded at Microsoft website.
 * The REST endpoint (Web Application/API) should be configured to run on "localhost" on port 80.
-* You need to do some research and come up with a powershell script that connects to SQL Server and run the SQL Script we provided to setup the database table structure.
+* You need to do some research and come up with a powershell script that connects to SQL Server and runs the SQL Script we provided to setup the database table structure.
 * You can send us an e-mail (fabricio.polonio at 4cinsights.com, bulat.gafurov at 4cinsights.com) if you have any question.
 
 ### Notes
 
 * Given a clean Windows 2012R2/2016 Server machine, this powershell script should run and install/deploy all those components without errors.
-* You can also suggest improvements on that build pipeline or point security issues.
-* You can "Fork" this repository on Github and commit your solution into some folder, ex: "Solution".
+* You can also suggest improvements to the build pipeline or point to security issues.
+* You can "Fork" this repository on Github and commit your solution into the some folder, ex: "Solution".
