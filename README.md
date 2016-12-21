@@ -12,29 +12,31 @@ The assignment simulates system with following workflow.
 
 ### Create one or more powershell scripts that perform the following actions:
 
-#### Phase 1
-
+#### Phase 1 - Environment setup
 1. Install Git for Windows
 1. Clone the https://github.com/Teletrax/CIAssignment.git repository into some folder
 1. Install .NET Core SDK
+
+#### Phase 2 - Build
 1. Restore .NET Core Package
 1. Build / Publish (Release Mode)
   1. FourC.Worker.Api
   1. FourC.Worker.Backend
-1. Create ZIP archive with published artifacts (5.i, 5.ii)
+1. Create ZIP archive with published artifacts (2.i, 2.ii)
 
-#### Phase 2
-
+#### Phase 3 - Environment configuration
 1. Install MSDTC
 1. Install MSMQ
 1. Install IIS
 1. Install ASP.NET Core
 1. Install SQL Server 2014/2016 (Express)
-1. Extract ZIP archive (From Phase 1 Step 5)
+
+#### Phase 4 - Deployment
+1. Extract ZIP archive (From Phase 2 Step 3)
 1. Run SQL script that will create the database and table structures. (Located inside the Scripts folder on repository)
 1. Configure and host the REST endpoint (Web Application) on IIS
 1. Configure and start (in background) the backend application
-	
+
 ### Test
 
 To test if the application is working properly you can use Postman and perform a test request to the REST API:
