@@ -1,5 +1,15 @@
 # 4C Continuous Integration Assignment
 
+### Application
+
+The assignment simulates system with following workflow.
+
+1. External actor (User) sends a REST request to the `FourC.Worker.Api` endpoint at `/v1/worker`
+1. `FourC.Worker.Api` handles web request by posting in to the queue (MSMQ)
+1. A backend process `FourC.Worker.Backend` reads messages from the queue and process the message by creating record in the database.
+
+![Architecture](architecture.png)
+
 ### Create one or more powershell scripts that perform the following actions:
 
 #### Phase 1
