@@ -32,7 +32,7 @@ The assignment simulates system with following workflow.
 1. Install SQL Server 2014/2016 (Express)
 
 #### Phase 4 - Deployment
-1. Extract ZIP archive (From Phase 2 Step )
+1. Extract ZIP archive (From Phase 2 Step 4)
 1. Run SQL script that will create the database and table structures. (Located inside the Scripts folder on repository)
 1. Configure and host the REST endpoint (Web Application) on IIS
 1. Configure and start (in background) the backend application
