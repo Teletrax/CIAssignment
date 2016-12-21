@@ -1,8 +1,9 @@
 # 4C Continuous Integration Assignment
 
-**Create one or more powershell scripts that perform the following actions:**
+### Create one or more powershell scripts that perform the following actions:
 
 **Phase 1**
+
     1. Install Git for Windows
     2. Clone the https://github.com/Teletrax/CIAssignment.git repository into some folder
     2. Install .NET Core SDK
@@ -13,6 +14,7 @@
     5. Create ZIP archive with published artifacts (4.1, 4.2)
 
 **Phase 2**
+
     1 - Install MSDTC
     2 - Install MSMQ
     3 - Install IIS
@@ -24,7 +26,7 @@
     8 - Configure and start (in background) the backend application
 
 	
-**Test**
+### Test
 
 To test if the application is working properly you can use Postman and perform a test request to the REST API:
 
