@@ -20,7 +20,7 @@ The assignment simulates system with following workflow.
 #### Phase 1 - Build Environment Setup
 1. Install Git for Windows
 1. Install .NET Core SDK
-nstall .NET Framework SDK 4.6.1 from https://download.microsoft.com/download/F/1/D/F1DEB8DB-D277-4EF9-9F48-3A65D4D8F965/NDP461-DevPack-KB3105179-ENU.exe
+1. Install Microsoft .NET Framework 4.6.1 Developer Pack
 
 #### Phase 2 - Build
 1. Clone the https://github.com/Teletrax/CIAssignment.git repository into some folder
